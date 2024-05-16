@@ -40,6 +40,9 @@
     "web-vitals": "^2.1.4",
     "webfontloader": "^1.6.28"
   },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

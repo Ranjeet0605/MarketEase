@@ -12,8 +12,10 @@
 # production
 /frontend/build
 
+#Ignore .env file
+backend/config/.env
 # misc
-/backend/config/.env
+
 /frontend/.DS_Store
 /frontend/.env.local
 /frontend/.env.development.local

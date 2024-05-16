@@ -1,0 +1,39 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px; 
+    background-color: #d6d3d3; 
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-100%); 
+    z-index: 999;
+    cursor: pointer;
+    color: #d6d3d3;
+
+  }
+  
+  .sidebar.show {
+    transform: translateX(0);
+    
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+  }
+
+  .sidebar-content a {
+    text-decoration: none;
+    color: hsl(0, 1%, 33%);
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .sidebar-content a:hover {
+   color: #288511;
+    cursor: pointer;
+  }
+  

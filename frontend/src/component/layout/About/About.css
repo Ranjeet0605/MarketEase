@@ -1,0 +1,36 @@
+.aboutUs{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: auto;
+align-items: center;
+position: fixed;
+background-color: white;
+width: 100vw;
+height: 100vh;
+bottom: -1vmax;
+padding: 1vmax;
+}
+ .aboutUs >img{
+   border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    padding: 1vmax;
+
+ }
+ .aboutUs>h2{
+  color: rgb(84, 82, 82);
+  font: 400 2vmax "Roboto";
+    border-bottom:1px solid rgb(59, 57, 57) ;
+ }
+ .aboutUs a{
+    text-decoration: none;
+    color: black;
+    padding: 0.5vmax 3vmax;
+    background-color: rgb(191, 193, 195);
+    margin: 0.5vmax;
+    font: 300 1vmax  "Roboto";
+ }
+ .p{
+    font: 300 1vmax  "Roboto";
+ }

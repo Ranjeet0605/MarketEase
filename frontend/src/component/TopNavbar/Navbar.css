@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 55px;
+}
+.topcontainer {
+display: flex;
+width: 100%;
+background-color: #464746;
+position: fixed;
+justify-content: space-between;
+align-items: center;
+height: 55px;
+z-index: 1001;
+top: 0;
+}
+
+.top-materrial {
+    display: flex;
+    align-items: center;
+}
+
+.E-commerce img {
+    width: 150px;
+    height: auto;
+    margin-right:10vmax;
+}
+
+.leftcontainer {
+    display: flex;
+    gap:2vmax;
+    margin-right:2vmax;
+}
+
+.person,
+.cart {
+    color: hsl(0, 0%, 100%);
+    font-size: 24px;
+    transition: color 0.3s ease;
+    
+}
+.person>a >svg{
+    color: hsl(0, 0%, 100%);
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+.cart>a >svg{
+    color: hsl(0, 0%, 100%);
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+.sidebar-icon {
+    color:white;
+    font-size: 24px;
+    cursor: pointer;
+  
+}
+.person >a>svg:hover{
+    color: #12e759;
+}
+.cart>a >svg:hover{
+    color: #12e759;
+}
+.cart:hover,
+.sidebar-icon:hover {
+    color: #12e759;
+}
+
+@media screen and (max-width:600px){
+    .leftcontainer {
+       
+        gap:1vmax;
+       
+    }
+    .topcontainer {
+       
+      height: 50px;
+      }
+}

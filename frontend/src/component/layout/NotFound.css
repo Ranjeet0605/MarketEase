@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.PageNotFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+   flex-direction: column;
+   position:fixed;
+   width: 100%;
+   left: 0%;
+  height: 100vh;
+  background-color: white;
+   bottom: -1vmax;
+
+}
+
+.PageNotFound>a{
+    margin-top: 0.5vmax;
+    background-color: tomato;
+    text-decoration: none;
+    padding: 0.7vmax 3vmax;
+    color: white;
+    font: 300 0.9vmax "Roboto";
+}
+@media screen and (max-width:600px){
+    .PageNotFound>a{
+        padding: 1.8vmax 5vmax;
+        font: 400 1.8vmax "Roboto";
+    }
+}

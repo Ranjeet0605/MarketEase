@@ -43,6 +43,10 @@
   "peerDependencies": {
     "react": "^18.2.0"
   },
+  "engines": {
+    "node": "v20.13.1",
+    "npm":"v10.5.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

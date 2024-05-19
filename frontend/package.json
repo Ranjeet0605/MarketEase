@@ -7,9 +7,10 @@
     "@material-ui/data-grid": "^4.0.0-alpha.37",
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.61",
-    "@mui/icons-material": "^5.15.11",
+    "@mui/icons-material": "^5.15.18",
     "@mui/material": "^5.15.11",
     "@mui/styles": "^5.15.11",
+    "@types/react": "^18.0.0",
     "@stripe/react-stripe-js": "^2.7.0",
     "@stripe/stripe-js": "^3.3.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -20,7 +21,7 @@
     "chart.js": "^4.4.2",
     "country-state-city": "^3.2.1",
     "overlay-navbar": "^1.2.3",
-    "react": "^17.0.0",
+    "react": "^18.2.0",
     "react-alert": "^7.0.3",
     "react-alert-template-basic": "^1.0.2",
     "react-chartjs-2": "^5.2.0",
@@ -45,7 +46,7 @@
   },
   "engines": {
     "node": "v20.13.1",
-    "npm":"v10.5.2"
+    "npm": "v10.5.2"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -7,10 +7,9 @@
     "@material-ui/data-grid": "^4.0.0-alpha.37",
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.61",
-    "@mui/icons-material": "^5.15.18",
+    "@mui/icons-material": "^5.15.11",
     "@mui/material": "^5.15.11",
     "@mui/styles": "^5.15.11",
-    "@types/react": "^18.0.0",
     "@stripe/react-stripe-js": "^2.7.0",
     "@stripe/stripe-js": "^3.3.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -46,13 +45,14 @@
   },
   "engines": {
     "node": "v20.13.1",
-    "npm": "v10.5.2"
+    "npm":"v10.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
   },
   "eslintConfig": {
     "extends": [

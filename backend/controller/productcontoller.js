@@ -153,7 +153,7 @@ const imagesLink =[];
      const product = await productSchema.findById(productId);
       const isReviewed =  product.reviews.find((rev)=>{
         rev.user.toString()===rev.user._id.toString()
-        console.log(rev.user.toString());
+        // console.log(rev.user.toString());
       }
       )
     //   console.log(req.user._id.toString());
@@ -185,7 +185,7 @@ const imagesLink =[];
   exports.getProductreviews = catchAsyncError(async(req,res,next)=>{
   
     const product = await productSchema.findById(req.query.ProductId);
-    console.log(product);
+    // console.log(product);
     if(!product){
         return next(new ErrorHandler("product not found",404));
     } 

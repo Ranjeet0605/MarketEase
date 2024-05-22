@@ -10,7 +10,7 @@ import {useNavigate} from "react-router-dom";
 const Cart = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    
+
     const {cartItem} = useSelector((state)=>state.cart)
   const incraseQuantity = (id,quantity,stock)=>{
     const newQty =  quantity+1;

@@ -33,7 +33,7 @@ exports.loginuser = catchAsyncError(async(req,res,next)=>{
     if(!email || !password){
         return next(new ErrorHandler("Please Enter Email & Password",400));
     }
-    console.log(password);
+    
     const user = await userSchema.findOne({email}).select("+password");
     if(!user){
         return next(new ErrorHandler("invalid email and password"),401);
@@ -96,7 +96,7 @@ exports.resetPassword = catchAsyncError(async(req,res,next)=>{
   if(!req.params.resettoken){
     return next(new ErrorHandler("Reset token is missing ",400));
   }
-console.log(req.params.resettoken);
+// console.log(req.params.resettoken);
 // const resetPasswordToken = crypto.createHash("sha256").update(req.params.resettoken).digest("hex")
 // console.log(resetPasswordToken)
 const resetPasswordToken = req.params.resettoken;
@@ -104,7 +104,7 @@ const user = await userSchema.findOne({resetpasswordToken:resetPasswordToken,res
   {
   $gt: Date.now(),
 },})
-console.log(user);
+// console.log(user);
 if(!user){
   return next(new ErrorHandler("Reset Password Token is invalid or has been expired", 400));
 }
@@ -112,8 +112,8 @@ if(!user){
 
     
 if(req.body.password !== req.body.confirmPassword){
-  console.log(req.body.password );
-  console.log(req.body.confirmpassword);
+  // console.log(req.body.password );
+  // console.log(req.body.confirmpassword);
   return next(new ErrorHandler("password does not match please enter password reagain", 400));
 }
   user.password = req.body.password;
@@ -184,9 +184,9 @@ exports.updateprofile = catchAsyncError(async(req,res,next)=>{
 
 // Get all user(admin)
 exports.getAlluser = catchAsyncError(async(req,res,next)=>{
-  console.log("my name ranjeet kumar pr")
+
 const users = await userSchema.find();
-console.log(users);
+// console.log(users);
 res.status(200).json({
   success: true,
   users,
@@ -195,8 +195,8 @@ res.status(200).json({
 
 //  get single user (admin)
 exports.getSingleuser = catchAsyncError(async(req, res,next)=>{
-  console.log("my name is ranjeet")
-  console.log(req.params._id);
+  
+  // console.log(req.params._id);
      const user = await userSchema.findById(req.params.id);
      if(!user){
       return next(new ErrorHandler(`user does not exist with Id: ${req.params.id}`))
@@ -213,7 +213,7 @@ exports.updateroles = catchAsyncError(async(req,res,next)=>{
     email: req.body.email,
     role: req.body.role,
   }
-  console.log(req.user.id);
+  // console.log(req.user.id);
   const user = await userSchema.findByIdAndUpdate(req.params.id,newUserdata,{
     new: true,
     runValidators: true,

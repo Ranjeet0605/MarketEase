@@ -25,6 +25,7 @@ const OrderList = () => {
    const deleteOrderHandler=(id)=>{
     dispatch(deleteOrder(id));
    }
+  
 
    useEffect(() => {
     if(error){

@@ -15,7 +15,7 @@ exports.newOrder = catchAsyncError(async(req,res,next)=>{
         shippingPrice,
         totalPrice,
     } = req.body;
-    console.log(req.user._id);
+    // console.log(req.user._id);
     const order = await orderSchema.create({
         shippingInfo, orderInfo,paymentInfo,
         itemPrice,taxPrice,shippingPrice,
@@ -48,11 +48,7 @@ res.status(200).json({
  //get logged in user orders
   exports.myOrders = catchAsyncError(async(req,res,next)=>{
     
-//     const userId = mongoose.Types.ObjectId(req.user._id);
-//    console.log(userId);
-//    if(!userId){
-//     return next(new ErrorHandler(`userId is not defind`,500));
-//    }
+
     const orders = await orderSchema.find({user:req.user._id});
    if(!orders){
     return next(new ErrorHandler(`oreders can't get`,404))

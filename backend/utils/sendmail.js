@@ -10,7 +10,7 @@ const sendEmail = async(options)=>{
               pass:'vaglabyvckucetlf',    
             }
     })
-    console.log(options.email);
+    // console.log(options.email);
     const mailOptions= {
         from:'kranjeet0829@gmail.com',
         to: options.email,

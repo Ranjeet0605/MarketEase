@@ -1,5 +1,5 @@
 import {legacy_createStore as createStore, combineReducers,applyMiddleware,compose} from "redux";
-import thunk from "redux-thunk";
+import {thunk} from "redux-thunk";
 import {composeWithDevTools} from "redux-devtools-extension";
 
 import { ProductDetailsReducer, ProductReducer,ProductReviewReducer,deleteProductReducer,deletereviewsReducer,newProductReducer,newReviewReducer } from "./reducers/ProductReducer";

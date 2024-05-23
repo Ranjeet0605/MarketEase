@@ -18,9 +18,9 @@ const Footer=()=> {
         </div>
         <div className="rightFooter">
             <h4>Follow Us</h4>
-            <a href='http://instagram.com/ranjeet0605'>Instagram</a>
-            <a href='http://linkdin.com/ranjeet0605'>linkdin</a>
-            <a href='http://facebook.com/ranjeet0605'>Facebook</a>
+            <a href='http://instagram.com/ranjeet_0605'>Instagram</a>
+            <a href='https://www.linkedin.com/in/ranjeet-kumar-316a17231/'>linkedin</a>
+            <a href='https://www.facebook.com/profile.php?id=100028464884635'>Facebook</a>
         </div>
     </footer>
   )

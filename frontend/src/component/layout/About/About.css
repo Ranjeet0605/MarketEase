@@ -34,3 +34,10 @@ padding: 1vmax;
  .p{
     font: 300 1vmax  "Roboto";
  }
+ @media screen and (max-size: 600px){
+   .aboutUs a{
+      padding: 1vmax 4vmax;
+      font: 300 1.5vmax  "Roboto";
+      margin: 0.5vmax;
+   }
+ }

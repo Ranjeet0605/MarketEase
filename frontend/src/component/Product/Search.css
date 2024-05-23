@@ -48,7 +48,7 @@ background-color: #3b3939;
     .searchBox > button[type="submit"] {
       
       width: 4vmax;
-       padding: 1.2vmax 2.8vmax;
+       padding: 1.vmax 2.8vmax;
         outline: none;
         font-size: 14px; 
        

@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import "./LoginSignUp.css";
 import Loader from '../layout/Loader/Loader';
-import { Link, useNavigate,useLocation ,useSearchParams} from 'react-router-dom';
+import { Link, useNavigate,useLocation} from 'react-router-dom';
 import EmailIcon from '@mui/icons-material/Email';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import FaceIcon from '@mui/icons-material/Face';

@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 import "./App.css";
 import Header from "./component/layout/Header/Header"
-import { BrowserRouter as Router, Route, Routes, Navigate} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Footer from "./component/layout/Footer/Footer"
 import Home from "./component/Home/Home";
-import Loader from './component/layout/Loader/Loader';
+
 import WebFont from "webfontloader"
 import ProductDetails from "./component/Product/ProductDetails"
 import Products from './component/Product/Products';
-import Search from './component/Product/Search';
+
 import LoginSignUp from './component/User/LoginSignUp';
 import Store from './Store';
 import { loaduser   } from './actions/UserAction';
 import { useSelector } from 'react-redux';
 import  UserOption from "./component/layout/Header/UserOption"
 import Profile from "./component/User/Profile";
-import ProtectRoute from './component/Route/ProtectRoute';
+
 import UpdateProfile from "./component/User/UpdateProfile";
 import UpdatePassword from './component/User/UpdatePassword';
 import ForgotPassword from "./component/User/ForgotPassword";

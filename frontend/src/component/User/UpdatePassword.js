@@ -1,10 +1,10 @@
 import React,{useEffect,useState,Fragment} from 'react'
 import "./UpdatePassword.css"
 import Loader from '../layout/Loader/Loader';
-import { Link, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 import { useDispatch,useSelector } from 'react-redux';
-import { clearErrors,loaduser,updatePassword} from '../../actions/UserAction';
+import { clearErrors,updatePassword} from '../../actions/UserAction';
 import { useAlert } from 'react-alert';
 import { UPDATE_PASSWORD_RESET } from '../../constants/userConstant';
 import MetaData from '../layout/MetaData';

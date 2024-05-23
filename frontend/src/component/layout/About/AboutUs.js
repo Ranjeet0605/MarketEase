@@ -1,7 +1,7 @@
 import React from 'react'
 import "./About.css"
 import profile from "../../../image/profileimage.jpeg"
-import { Typography } from '@mui/material'
+
 const AboutUs = () => {
   return (
     <div  className='aboutUs'>

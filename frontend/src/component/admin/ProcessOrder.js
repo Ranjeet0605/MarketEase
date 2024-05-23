@@ -20,7 +20,7 @@ const ProcessOrder = () => {
 
 const{error:updateError,isUpdated} = useSelector((state)=>state.updateanddeleteOrders) ;
 const {isAuthenticated} = useSelector((state)=>state.user);
-const navigate = useNavigate();
+
 
 const [status,setStatus]=useState();
 

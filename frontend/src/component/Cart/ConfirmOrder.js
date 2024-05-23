@@ -1,6 +1,6 @@
 import React, { Fragment} from 'react'
 import CheckoutSteps from './CheckoutSteps'
-import { useSelector ,useDispatch} from 'react-redux'
+import { useSelector } from 'react-redux'
 import MetaData from '../layout/MetaData'
 import "./ConfirmOrder.css"
 import { Link, useNavigate } from 'react-router-dom'

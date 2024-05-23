@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CiSearch } from 'react-icons/ci';
+
 import { RiAccountBoxFill } from 'react-icons/ri';
 import { BiCart, BiHome } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
@@ -7,7 +7,7 @@ import logo from '../../image/logo.png';
 import Sidebar from './Sidebar'; // Import the Sidebar component
 import './Navbar.css';
 import Search from '../Product/Search';
-import { useTabContext } from '@material-ui/lab';
+
 const Navbar = () => {
    
     const [showSidebar, setShowSidebar] = useState(false);

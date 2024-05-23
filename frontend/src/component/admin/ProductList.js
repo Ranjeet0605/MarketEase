@@ -5,7 +5,7 @@ import "./ProductList.css"
 import { DataGrid } from '@material-ui/data-grid'
 import { useSelector,useDispatch } from 'react-redux'
 import { clearErrors,deleteProduct,getAdminProduct } from '../../actions/ProductAction'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useAlert } from 'react-alert'
 import { Button } from '@mui/material'
 import EditIcon from "@material-ui/icons/Edit"

@@ -3,7 +3,7 @@
 import React from 'react'
 import profilePng from "../../image/Profile.png";
 import ReactStars from "react-star-rating-component"
-import {Rating} from "@material-ui/lab"
+
 
 const  ReviewCard=({review})=> {
     const options = {

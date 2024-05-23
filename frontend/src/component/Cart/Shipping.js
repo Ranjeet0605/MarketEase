@@ -9,7 +9,7 @@ import LocationCityIcon from "@material-ui/icons/LocationCity"
 import PublicIcon from "@material-ui/icons/Public"
 import PhoneIcon from "@material-ui/icons/Phone"
 import TransferWithinAStationIcon from "@material-ui/icons/TransferWithinAStation"
- import {Country,State,City} from "country-state-city";
+ import {Country,State} from "country-state-city";
 import { useAlert } from 'react-alert'
 import CheckoutSteps from "../Cart/CheckoutSteps";
 import { useNavigate } from 'react-router-dom'

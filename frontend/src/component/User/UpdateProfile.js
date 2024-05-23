@@ -1,7 +1,7 @@
 import React, { useState ,useEffect,Fragment} from 'react'
 import "./UpdateProfile.css"
 import Loader from '../layout/Loader/Loader';
-import { Link, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import EmailIcon from '@mui/icons-material/Email';
 
 import FaceIcon from '@mui/icons-material/Face';
@@ -58,7 +58,7 @@ useEffect(()=>{
         Navigate("/account")
         dispatch({type:UPDATE_PROFILE_RESET,})
     }
-},[dispatch,error,alert,Navigate,isUpdated,user])
+},[dispatch,error,alert,Navigate,isUpdated,user,isAuthenticated])
   return (
     <Fragment>
         {loading ? (<Loader/>): ( isAuthenticated &&<Fragment>

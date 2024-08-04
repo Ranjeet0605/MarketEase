@@ -32,15 +32,16 @@ const Search=()=> {
    <Fragment>
     <MetaData title="Search A product -- ECOMMERCE"/>
     <form  className="searchBox" onSubmit={seachSumitHandler}>
+        <div className='search-container'>
         <input
          type='text'
          placeholder='Search a Product ...'
-        
+         className='search-input'
          onChange={handleKeywordChange}
          value={keyword}
         />
-        <button type='submit' ><CiSearch style={{color:"black",fontSize:"10"}}/></button>
-       
+        <button type='submit' className='search-button' ><CiSearch className='search-icon' style={{color:"black",fontSize:"10"}}/></button>
+        </div>
     </form>
    </Fragment>
   )

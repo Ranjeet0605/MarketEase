@@ -13,8 +13,8 @@ padding: 1vmax;
 }
  .aboutUs >img{
    border-radius: 100%;
-    width: 150px;
-    height: 150px;
+    width: 13vmax;
+    height: 13vmax;
     padding: 1vmax;
 
  }
@@ -30,14 +30,42 @@ padding: 1vmax;
     background-color: rgb(191, 193, 195);
     margin: 0.5vmax;
     font: 300 1vmax  "Roboto";
+    border-radius: 1vmax;
  }
- .p{
+ .aboutUs>a.linkedin{
+   padding: 0.5vmax 3.5vmax;
+  }
+ .aboutUs>.p{
     font: 300 1vmax  "Roboto";
  }
- @media screen and (max-size: 600px){
+ .aboutUs a:hover{
+   background-color: rgb(9, 180, 9);
+ }
+
+ @media screen and (max-width:600px){
    .aboutUs a{
       padding: 1vmax 4vmax;
-      font: 300 1.5vmax  "Roboto";
+      font: 300 2vmax  "Roboto";
       margin: 0.5vmax;
    }
+   .aboutUs >img{
+      border-radius: 100%;
+       width: 17vmax;
+       height:17vmax;
+       padding: 1vmax;
+   
+    }
+    .aboutUs >.p{
+      font: 300 3vmax  "Roboto";
+      text-align: center;
+    }
+    .aboutUs>h2{
+      
+      font: 400 4vmax "Roboto";
+       
+     }
+     .aboutUs>a.linkedin{
+      padding: 1vmax 5vmax;
+     }
+   
  }

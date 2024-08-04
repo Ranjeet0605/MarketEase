@@ -33,9 +33,9 @@ const Navbar = () => {
     return (
         <div className="topcontainer">
             <div className="top-materrial">
-                <Link to="/">
+                <Link to="/" style={{textDecoration:"none"}}>
                 <span className="E-commerce">
-                   { windowWidth <=600? <BiHome style={{ fontSize: '30px', color:"white" }}/>:<img className="image" src={logo} alt="e-commerce" />}
+                   { windowWidth <=600? <div className='R_k'>R_K</div>:<img className="image" src={logo} alt="e-commerce" />}
                 </span>
                 </Link>
             </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="cart">
-                    <span onClick={()=>handleSidebarToggle()}>&#9776;</span>
+                    <span className='tree_line' onClick={()=>handleSidebarToggle()}>&#9776;</span>
 
                 </div>
             </div>

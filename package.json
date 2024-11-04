@@ -4,10 +4,12 @@
   "description": "",
   "main": "backend",
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "node -r dotenv/config backend/server.js dotenv_config_path=backend/config/.env",
     "dev": "nodemon backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend && npm install --legacy-peer-deps"
+  "build": "npm install --legacy-peer-deps --prefix backend/frontend && npm run build --prefix backend/frontend && npm install --legacy-peer-deps"
+
+
   },
   "author": "",
   "license": "ISC",

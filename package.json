@@ -7,9 +7,7 @@
     "start": "node -r dotenv/config backend/server.js dotenv_config_path=backend/config/.env",
     "dev": "nodemon backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-  "build": "npm install --legacy-peer-deps --prefix backend/frontend && npm run build --prefix backend/frontend && npm install --legacy-peer-deps"
-
-
+    "build": "npm install --legacy-peer-deps --prefix backend/frontend && npm run build --prefix backend/frontend && npm install --legacy-peer-deps"
   },
   "author": "",
   "license": "ISC",
@@ -27,11 +25,13 @@
     "mongodb": "^6.3.0",
     "mongoose": "^8.1.1",
     "nodemailer": "^6.9.13",
-    "nodemon": "^3.0.3",
     "path": "^0.12.7",
     "react-star-rating-component": "^1.4.1",
     "react-star-ratings": "^2.3.0",
     "stripe": "^15.2.0",
     "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }

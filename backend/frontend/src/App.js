@@ -66,9 +66,10 @@ React.useEffect(()=>{
   Store.dispatch(loaduser());
   getStripeApiKey()
 },[]);
-
 //  condition for inspect
   // window.addEventListener("contextmenu",(e)=> e.preventDefault());
+  console.log(stripeApiKey);
+
   return (
     <Router>
     <Header/>

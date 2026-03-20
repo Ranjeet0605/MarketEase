@@ -1,5 +1,19 @@
 Create a .env file in the root directory and add the required environment variables as shown in .env.example
 
+# 🛒 E-Commerce Website
+
+🚀 Live Demo:   https://marketease-1.onrender.com
+💻 GitHub Repo: https://github.com/Ranjeet0605/MarketEase
+
+---
+
+## 📌 Features
+- User Authentication
+- Add to Cart
+- Payment Integration
+- Admin Dashboard
+
+
 # ===============================
 # 🌐 SERVER CONFIGURATION
 # ===============================
